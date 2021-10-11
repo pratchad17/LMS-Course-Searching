@@ -1,105 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Searching</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous"
+        />
+        <!-- StyleSheet -->
+        <link rel="stylesheet" href="style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Searching</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!-- StyleSheet -->
-    <link rel="stylesheet" href="style.css">
+        <script
+            src="https://kit.fontawesome.com/193f3c6547.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
 
-    <script src="https://kit.fontawesome.com/193f3c6547.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <main>
-        <header>
-            <div>
-                <nav class="navbar navbar-light">
-                    <div class="container">
-                        <a class="navbar-brand" href="#">
-                            <img src="images/title-logo.png" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <span><a class="nav-font" href="">Home</a></span>
-                    </div>
-                    <div>
-                        <a class="nav-font-learning" href="">My Learnings</a>
-                    </div>
-                </nav>
-
-            </div>
-        </header>
-        <section class="welcome-section">
-            <div class="welcome-title">
-                <h1 class="welcome">Welcome</h1>
-            </div>
-        </section>
-        <section class="searching-section">
-            <div class="searching-part">
-                <div class="looking-for">
-                    <h3 class="looking-title">Are you looking for something</h3>
-                </div>
-                <div class="search-of-search">
-                    <div class="searching-button"><i class="fas fa-search"></i> Search</div>
-                </div>
-
-            </div>
-
-        </section>
-        <section class="choose-area">
-            <div class="therapeutic">
-                <h4 class="therapeutic-area">Choose your Therapeutic Area</h4>
-            </div>
-
-            <div class="choose-your-area">
-
-                <div class="spasticity-area">
-                    <div class="spasticity-image">
-                        <img class="hand-image" src="images/hand.png" alt="">
-                    </div>
-                    <div class="spasticity-part">
-                        <div class="spasticity">
-                            Spasticity
+    <body>
+        <main>
+            <header>
+                <div>
+                    <nav class="navbar navbar-light">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">
+                                <img src="images/title-logo.png" alt="" />
+                            </a>
                         </div>
-                        <div class="resources">
-                            <a class="see-resources" href="">See resources</a>
+                        <div>
+                            <span><a class="nav-font" href="">Home</a></span>
                         </div>
-
-                    </div>
-
-
-
+                        <div>
+                            <a class="nav-font-learning" href=""
+                                >My Learnings</a
+                            >
+                        </div>
+                    </nav>
                 </div>
-                <div class="migraine-area">
-                    <div class="migraine-image">
-                        <img class="woman-image" src="images/woman.png" alt="">
+            </header>
+            <section class="welcome-section">
+                <div class="welcome-title">
+                    <h1 class="welcome">Welcome</h1>
+                </div>
+            </section>
+            <section class="searching-section">
+                <div class="searching-part">
+                    <div class="looking-for">
+                        <h3 class="looking-title">
+                            Are you looking for something
+                        </h3>
                     </div>
-                    <div class="migraine-part">
-                        <div class="migraine">
-                            Chronic Migraine
-                        </div>
-
-                        <div class="resources">
-                            <a class="see-resources" href="">See resources</a>
+                    <div class="search-of-search">
+                        <div class="searching-button">
+                            <i class="fas fa-search"></i> Search
                         </div>
                     </div>
                 </div>
+            </section>
+            <section class="choose-area">
+                <div class="therapeutic">
+                    <h4 class="therapeutic-area">
+                        Choose your Therapeutic Area
+                    </h4>
+                </div>
 
-            </div>
+                <div class="choose-your-area">
+                    <div class="spasticity-area">
+                        <div class="spasticity-image">
+                            <img
+                                class="hand-image"
+                                src="images/hand.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="spasticity-part">
+                            <div class="spasticity">Spasticity</div>
+                            <div class="resources">
+                                <a class="see-resources" href=""
+                                    >See resources</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="migraine-area">
+                        <div class="migraine-image">
+                            <img
+                                class="woman-image"
+                                src="images/woman.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="migraine-part">
+                            <div class="migraine">Chronic Migraine</div>
 
-        </section>
+                            <div class="resources">
+                                <a class="see-resources" href=""
+                                    >See resources</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="recommended-section">
+                <div class="recommended">
+                    <h4 class="recommended-title">Recommended courses</h4>
+                </div>
+                <div class="recommended-courses-part">
+                    <div class="last-section">
+                        <div class="last-part">
+                            <div class="course-part">
+                                <div class="course-part-section">
+                                    <div class="image">
+                                        <div class="dermatology">
+                                            <div class="derm">Dermatology</div>
+                                        </div>
+                                        <div class="play-button">
+                                            <span
+                                                style="
+                                                    color: #000000;
+                                                    opacity: 80%;
+                                                "
+                                            >
+                                                <i class="fas fa-play"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="eye">
+                                            The Lowdown of Dry Eye and Contact
+                                            Lences
+                                        </h5>
+                                    </div>
+                                    <div class="suffer-from">
+                                        <span class="suffer"
+                                            >Do you suffer from pain, the
+                                            sensation of having something in
+                                            your eye..</span
+                                        >
+                                    </div>
+                                    <div class="progress-section">
+                                        <div
+                                            class="progress"
+                                            style="height: 5px"
+                                        >
+                                            <div
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 90%"
+                                                aria-valuenow="50"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                            ></div>
+                                        </div>
 
+                                        <div class="concluded">
+                                            <span>999% concluded</span>
+                                        </div>
+                                    </div>
 
+                                    <div class="icon-last">
+                                        <div class="star">
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                |
+                                                <i
+                                                    class="icon far fa-bookmark"
+                                                ></i>
+                                                <i
+                                                    class="
+                                                        icon
+                                                        fas
+                                                        fa-share-alt
+                                                    "
+                                                ></i>
+                                                <i
+                                                    class="
+                                                        icon
+                                                        fas
+                                                        fa-ellipsis-v
+                                                    "
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-part">
+                                <div class="course-part-section">
+                                    <div class="image-two">
+                                        <div class="dermatology">
+                                            <div class="derm">Dermatology</div>
+                                        </div>
+                                        <div class="play-button">
+                                            <span
+                                                style="
+                                                    color: #000000;
+                                                    opacity: 80%;
+                                                "
+                                            >
+                                                <i class="fas fa-play"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="eye">
+                                            The Lowdown of Dry Eye and Contact
+                                            Lences
+                                        </h5>
+                                    </div>
+                                    <div class="suffer-from">
+                                        <span class="suffer"
+                                            >Do you suffer from pain, the
+                                            sensation of having something in
+                                            your eye..</span
+                                        >
+                                    </div>
+                                    <div class="progress-section">
+                                        <div
+                                            class="progress"
+                                            style="height: 5px"
+                                        >
+                                            <div
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 90%"
+                                                aria-valuenow="50"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                            ></div>
+                                        </div>
 
+                                        <div class="concluded">
+                                            <span>999% concluded</span>
+                                        </div>
+                                    </div>
 
-    </main>
+                                    <div class="icon-last">
+                                        <div class="star">
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                |
+                                                <i
+                                                    class="icon far fa-bookmark"
+                                                ></i>
+                                                <i
+                                                    class="
+                                                        icon
+                                                        fas
+                                                        fa-share-alt
+                                                    "
+                                                ></i>
+                                                <i
+                                                    class="
+                                                        icon
+                                                        fas
+                                                        fa-ellipsis-v
+                                                    "
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-part">
+                                <div class="course-part-section">
+                                    <div class="image">
+                                        <div class="dermatology">
+                                            <div class="derm">Dermatology</div>
+                                        </div>
+                                        <div class="play-button">
+                                            <span
+                                                style="
+                                                    color: #000000;
+                                                    opacity: 80%;
+                                                "
+                                            >
+                                                <i class="fas fa-play"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="eye">
+                                            The Lowdown of Dry Eye and Contact
+                                            Lences
+                                        </h5>
+                                    </div>
+                                    <div class="suffer-from">
+                                        <span class="suffer"
+                                            >Do you suffer from pain, the
+                                            sensation of having something in
+                                            your eye..</span
+                                        >
+                                    </div>
+                                    <div class="progress-section">
+                                        <div
+                                            class="progress"
+                                            style="height: 5px"
+                                        >
+                                            <div
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 90%"
+                                                aria-valuenow="50"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                            ></div>
+                                        </div>
 
+                                        <div class="concluded">
+                                            <span>999% concluded</span>
+                                        </div>
+                                    </div>
 
-</body>
+                                    <div class="icon-last">
+                                        <div class="star">
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                |
+                                                <i
+                                                    class="icon far fa-bookmark"
+                                                ></i>
+                                                <i
+                                                    class="
+                                                        icon
+                                                        fas
+                                                        fa-share-alt
+                                                    "
+                                                ></i>
+                                                <i
+                                                    class="
+                                                        icon
+                                                        fas
+                                                        fa-ellipsis-v
+                                                    "
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-part">
+                                <div class="course-part-section">
+                                    <div class="image-two">
+                                        <div class="dermatology">
+                                            <div class="derm">Dermatology</div>
+                                        </div>
+                                        <div class="play-button">
+                                            <span
+                                                style="
+                                                    color: #000000;
+                                                    opacity: 80%;
+                                                "
+                                            >
+                                                <i class="fas fa-play"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="eye">
+                                            The Lowdown of Dry Eye and Contact
+                                            Lences
+                                        </h5>
+                                    </div>
+                                    <div class="suffer-from">
+                                        <span class="suffer"
+                                            >Do you suffer from pain, the
+                                            sensation of having something in
+                                            your eye..</span
+                                        >
+                                    </div>
+                                    <div class="progress-section">
+                                        <div
+                                            class="progress"
+                                            style="height: 5px"
+                                        >
+                                            <div
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 90%"
+                                                aria-valuenow="50"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                            ></div>
+                                        </div>
 
+                                        <div class="concluded">
+                                            <span>999% concluded</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-last">
+                                        <div class="star">
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                            <i
+                                                class="icon-star far fa-star"
+                                            ></i>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                |
+                                                <i
+                                                    class="icon far fa-bookmark"
+                                                ></i>
+                                                <i
+                                                    class="
+                                                        icon
+                                                        fas
+                                                        fa-share-alt
+                                                    "
+                                                ></i>
+                                                <i
+                                                    class="
+                                                        icon
+                                                        fas
+                                                        fa-ellipsis-v
+                                                    "
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
